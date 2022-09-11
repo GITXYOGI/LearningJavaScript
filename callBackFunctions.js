@@ -15,11 +15,11 @@ function getStudents() {
     setTimeout(function () {
         let html = '';
         students.forEach(function (student) {
-            html = `<li>${student.id} ${student.name}</li>`;
+            html += `<li>${student.id} ${student.name}</li>`;
         });
         document.body.innerHTML = html;
 
     }, 1000);
 
 }
-addStudents(4, 'yogesh', getStudents);
+addStudents(1, 'yogesh', getStudents);

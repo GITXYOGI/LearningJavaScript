@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Bubbling and Capturing</title>
+    <style>
+        div{
+            min-width: 150px;
+            min-height: 200px;
+            padding: 40px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <h1>grandparent</h1>
+        <div id="parent">
+            <h2>parent</h2>
+            <div id="child">
+                <h3>child</h3>
+                <div id="infant"><h4>infant</h4></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.getElementById("grandparent").addEventListener("click",()=>{
+    console.log("grandparent is clicked")
+});
+document.getElementById("parent").addEventListener("click",()=>{
+    console.log("parent is clicked")
+});
+document.getElementById("child").addEventListener("click",()=>{
+    console.log("child is clicked")
+});
+document.getElementById("infant").addEventListener("click",()=>{
+    console.log("infant is clicked")
+});
+
+
+    </script>
+</body>
+</html>

@@ -27,6 +27,7 @@ function getStudents() {
             html += `<li>${student.id} ${student.name}</li>`;
         });
         document.body.innerHTML = html;
+        console.log(html);
 
     }, 1000);
 

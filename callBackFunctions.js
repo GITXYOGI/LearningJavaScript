@@ -19,7 +19,7 @@ function getStudents() {
         });
         document.body.innerHTML = html;
 
-    }, 1000);
+    }, 5000);
 
 }
 addStudents(1, 'yogesh', getStudents);
